@@ -1,6 +1,6 @@
 # BL Travel Companion
 
-BL Travel Companion is a Streamlit travel assistant for Bảo Lộc, Vietnam. It uses Firebase Email/Password for registration and sign-in. Signed-in visitors see their email and a protected travel chat placeholder. Chat and model requests are outside the app's current scope.
+BL Travel Companion is a Streamlit travel assistant for Bảo Lộc, Vietnam. It uses Firebase Email/Password for registration and sign-in. Signed-in visitors can ask questions about the guide and inspect the evidence retrieved for each answer.
 
 - Student name: Le Tan Loc
 - Student ID: 25127406
@@ -53,11 +53,21 @@ The service checker reports whether the two Firebase settings are present. Use t
 
 Open the local Streamlit URL. Select **Create an account**, enter an email you control, and type the same separate app password into **Password** and **Re-enter password**. Select **Create account**. Expect **Account created. Please sign in** above the sign-in form and an empty password field.
 
-Enter the same email and try a blank or incorrect password. Expect an error, the email you typed, and an empty password field. Registration errors also preserve the email and clear both password fields. Enter the correct credentials and confirm the page shows your email, **Sign out**, and **Travel chat is coming soon**. Open the same local URL in a private browser window and confirm it shows **Sign in** without the protected placeholder. Select **Sign out** in the original window and confirm it returns to **Sign in**.
+Enter the same email and try a blank or incorrect password. Expect an error, the email you typed, and an empty password field. Registration errors also preserve the email and clear both password fields. Enter the correct credentials and confirm the page shows your email, **Sign out**, and the **Ask about Bảo Lộc** chat input. Open the same local URL in a private browser window and confirm that it starts signed out without a chat input. Select **Sign out** in the original window and confirm it returns to **Sign in**.
 
-To submit with the keyboard, Tab to the submit button and press Enter or Space. Pressing Enter inside an input no longer submits the form.
+Press Enter in an authentication field to submit its form. The inline submission hint is hidden. You can also Tab to the submit button and activate it with Enter or Space.
 
 The app checks session expiry while the protected page is open and clears the session on expiry or sign-out. When either Firebase setting is missing, the app shows setup guidance. To check that locally without changing `.env`, run the app from a disposable PowerShell shell with a whitespace-only `FIREBASE_API_KEY` override, then close that shell after testing.
+
+## Use the travel chat
+
+After signing in, submit a question in **Ask about Bảo Lộc**. The app shows a loading indicator while it searches the guide and prepares the answer. Open **Retrieved evidence** beneath an answer to see the exact entries used for that turn, including the full text, source links, and cosine scores.
+
+Each question is answered independently using the guide. Earlier turns stay visible across normal reruns in the current Streamlit session. The app stores no conversation files or database records. A separate browser session starts empty. Sign-out and expiry clear the conversation and any failed question. If the session expires during a request, the result is discarded when the request returns.
+
+Blank questions make no service request. A retrieval or generation error leaves prior successful turns visible and keeps the failed question available under **Retry question**. Retry sends the stored question once per click. A rerun alone sends nothing. The guide's lack-of-evidence refusal is displayed as a successful answer.
+
+On November 17, 2026, the authenticated Edge chat reproduced all six answers and evidence sets in the standalone evaluation below after restarting the Pinggy tunnel. The four cited answers matched the retrieved text, and the two questions without evidence received the guide refusal. All six turns remained visible with separate evidence. A separate tab started signed out, and sign-out removed the live conversation. AppTest and browser simulations verified retry, blank input, guide-cache reuse, sign-in with an empty history, and expiry during a request.
 
 ## Ollama and Pinggy
 
@@ -101,7 +111,7 @@ With Ollama and Pinggy running, run the checker from the project folder in Power
 .\.venv\Scripts\python.exe check_generation.py
 ```
 
-`rag.answer_question(question)` returns the final answer, its citation IDs, and the three retrieved guide entries with cosine scores. It reuses the retrieval index and passes only the retrieved IDs, titles, and text to `qwen3:4b`, alongside the question. It requests final text with thinking disabled. The Streamlit interface does not call this function yet.
+`rag.answer_question(question)` returns the final answer, its citation IDs, and the three retrieved guide entries with cosine scores. It reuses the retrieval index and passes only the retrieved IDs, titles, and text to `qwen3:4b`, alongside the question. It requests final text with thinking disabled. The Streamlit chat uses this same function.
 
 The prompt asks for an exact refusal when the evidence lacks the specific requested fact. A high similarity score alone cannot make a question answerable. The model returns final text in a constrained JSON field. The function validates citation membership and requires a citation for factual text. Missing or invalid citations trigger one correction attempt using the same evidence. A second failure produces a validation error. The function never inserts citations or treats a service failure as a refusal.
 
