@@ -24,4 +24,4 @@ if missing_settings:
 else:
     st.success("All required settings are present.")
 
-st.caption("Service connections have not been verified.")
+st.caption("This page checks settings only. Run `check_services.py` to verify Ollama.")
