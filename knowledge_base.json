@@ -1,0 +1,182 @@
+[
+  {
+    "id": "G01",
+    "title": "Dambri Waterfall",
+    "text": "Dambri Waterfall is the main natural attraction in the Đamb’ri ecotourism area, around 18 km from central Bảo Lộc. The falling water throws up mist and spray.",
+    "source": "https://csdl.vietnamtourism.gov.vn/dest/?item=115",
+    "category": "nature",
+    "tags": [
+      "waterfall",
+      "forest",
+      "outdoors"
+    ]
+  },
+  {
+    "id": "G02",
+    "title": "Activities at Đamb’ri Ecotourism Park",
+    "text": "Đamb’ri offers activities alongside its waterfall scenery. The operator lists a forest alpine coaster, swan pedal boats, tandem bicycles and group games. These are advertised activities rather than a guarantee that every attraction is operating on a particular day.",
+    "source": "https://www.dambri.com.vn/",
+    "category": "attraction",
+    "tags": [
+      "outdoors",
+      "rides",
+      "boating"
+    ]
+  },
+  {
+    "id": "G03",
+    "title": "Hồ Nam Phương",
+    "text": "Hồ Nam Phương is a large lake close to central Bảo Lộc. Its open water and mountain views make it a place for a quiet sightseeing stop.",
+    "source": "https://localvietnam.com/lam-dong/bao-loc/",
+    "category": "nature",
+    "tags": [
+      "lake",
+      "scenery",
+      "outdoors"
+    ]
+  },
+  {
+    "id": "G04",
+    "title": "Hồ Đồng Nai",
+    "text": "Hồ Đồng Nai is a central Bảo Lộc lake with a walkable perimeter and nearby cafés. It suits a short walk or a coffee break in town.",
+    "source": "https://localvietnam.com/lam-dong/bao-loc/",
+    "category": "nature",
+    "tags": [
+      "lake",
+      "city-center",
+      "walking"
+    ]
+  },
+  {
+    "id": "G05",
+    "title": "Tu viện Bát Nhã",
+    "text": "Tu viện Bát Nhã is a monastery near Bảo Lộc known for its yellow flowering trees. A February 2025 report photographed blossoms on the grounds.",
+    "source": "https://vnexpress.net/phuong-vang-bung-no-o-bao-loc-4848294.html",
+    "category": "religious-site",
+    "tags": [
+      "buddhist",
+      "monastery",
+      "seasonal-flowers"
+    ]
+  },
+  {
+    "id": "G06",
+    "title": "Chùa Phước Huệ",
+    "text": "Chùa Phước Huệ is a Buddhist temple in Bảo Lộc. Local reporting records a visit by city leaders to its abbot during the 2025 Vesak celebrations, connecting the temple with the area's Buddhist community.",
+    "source": "https://baolamdong.vn/lanh-dao-tp-bao-loc-tham-tang-qua-cac-co-so-phat-giao-nhan-dip-le-phat-dan-nam-2025-270364.html",
+    "category": "religious-site",
+    "tags": [
+      "buddhist",
+      "temple",
+      "vesak"
+    ]
+  },
+  {
+    "id": "G07",
+    "title": "Nhà thờ Tân Thanh",
+    "text": "Nhà thờ Tân Thanh is a church in the Bảo Lộc area. A February 2025 report photographed yellow blossoms at the church.",
+    "source": "https://vnexpress.net/phuong-vang-bung-no-o-bao-loc-4848294.html",
+    "category": "religious-site",
+    "tags": [
+      "church",
+      "seasonal-flowers",
+      "photography"
+    ]
+  },
+  {
+    "id": "G08",
+    "title": "Tâm Châu Tea Hills",
+    "text": "The Tâm Châu tea farm near Bảo Lộc has rolling hills planted with oolong tea. Its tea-growing landscape offers a way to explore the region's connection with tea.",
+    "source": "https://localvietnam.com/lam-dong/bao-loc/",
+    "category": "agriculture",
+    "tags": [
+      "tea",
+      "highlands",
+      "outdoors"
+    ]
+  },
+  {
+    "id": "G09",
+    "title": "Tâm Châu Shopping and Dining Center",
+    "text": "Tâm Châu's service center in Bảo Lộc advertises restaurants, a café and shopping for local specialties. It combines places to eat and browse regional products in one stop.",
+    "source": "https://www.tamchaucenter.com/",
+    "category": "shopping",
+    "tags": [
+      "tea",
+      "coffee",
+      "gifts"
+    ]
+  },
+  {
+    "id": "G10",
+    "title": "Tea Products from Tâm Châu",
+    "text": "Tâm Châu is a tea and coffee business based in Bảo Lộc. Its product catalogue includes oolong, green tea and jasmine tea. These names describe different products, so check the label when selecting tea to take home.",
+    "source": "https://www.traoolongtamchau.com/gioi-thieu",
+    "category": "local-products",
+    "tags": [
+      "tea",
+      "oolong",
+      "gifts"
+    ]
+  },
+  {
+    "id": "G11",
+    "title": "Mulberry Farming and Silkworms",
+    "text": "Mulberry cultivation and silkworm raising help supply Bảo Lộc's silk industry. The local authority explains that mulberry leaves feed the silkworms, whose cocoons provide material for silk production.",
+    "source": "https://phuong2baoloc.lamdong.gov.vn/chi-tiet-tin-tuc/?param=tiem-nang-cay-dau-con-tam-tai-phuong-2-bao-loc---mot-vung-dat-dang-tung-buoc-khang-dinh-vi-the-trung-tam-to-lua-cua-ca-nuoc-4cf4ad75-4bab-4b8e-9814-eb95d5260f00",
+    "category": "culture",
+    "tags": [
+      "mulberry",
+      "silkworms",
+      "silk"
+    ]
+  },
+  {
+    "id": "G12",
+    "title": "Silk Products from Bảo Lộc",
+    "text": "Bảo Lộc's silk industry serves domestic and export markets. The Ministry of Industry and Trade describes local mills exporting silk satin for Japanese kimono and other silk fabrics for headscarves and formal clothing.",
+    "source": "https://thuongmaibiengioimiennui.gov.vn/san-xuat-tieu-thu/2024/10/bao-loc-tinh-lam-dong-huong-toi-phat-trien-ben-vung-san-pham-to-lua",
+    "category": "culture",
+    "tags": [
+      "silk",
+      "textiles",
+      "local-craft"
+    ]
+  },
+  {
+    "id": "G13",
+    "title": "Yellow Blossoms Around Bảo Lộc",
+    "text": "Yellow flowering trees appear at several Bảo Lộc landmarks and streets. The local authority names Huỳnh Thúc Kháng and Phùng Hưng streets, Tân Thanh Church and Bát Nhã Monastery as viewing locations. Flowering is seasonal.",
+    "source": "https://phuong3baoloc.lamdong.gov.vn/chi-tiet-tin-tuc/?param=dam-say-mua-hoa-phuong-vang-tren-vung-dat-b-lao-cc65d761-fbf3-400b-9299-9cb905207b87",
+    "category": "seasonal",
+    "tags": [
+      "seasonal-flowers",
+      "streets",
+      "photography"
+    ]
+  },
+  {
+    "id": "G14",
+    "title": "Travelling from Ho Chi Minh City to Bảo Lộc",
+    "text": "Bảo Lộc is reachable by road from Ho Chi Minh City via National Highway 20. Travellers can look for coaches and passenger vans. Confirm schedules and pickup points with the chosen carrier.",
+    "source": "https://localvietnam.com/lam-dong/bao-loc/",
+    "category": "transport",
+    "tags": [
+      "bus",
+      "road-travel",
+      "ho-chi-minh-city"
+    ]
+  },
+  {
+    "id": "G15",
+    "title": "Bảo Lộc's Highland Climate",
+    "text": "Bảo Lộc has a mild highland climate and a long rainy season. A local planning report notes that rainfall was concentrated from July to September in the historical records it reviewed. Check a current forecast when planning outdoor activities.",
+    "source": "https://lamdong.gov.vn/sites/baoloc/dau-tu/congboquyhoach/Shared%20Documents/Nam2021/KHSDD%202021%20Bao%20Loc_TrinhDuyet.pdf",
+    "category": "travel-advice",
+    "tags": [
+      "climate",
+      "rain",
+      "highlands"
+    ]
+  }
+]
