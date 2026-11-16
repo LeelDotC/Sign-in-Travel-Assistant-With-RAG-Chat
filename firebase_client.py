@@ -98,7 +98,7 @@ def _authenticate(action: str, email: str, password: str) -> dict:
     if expires_at <= time.monotonic():
         raise FirebaseError(INVALID_RESPONSE)
 
-    # The placeholder only needs the verified identity and expiry.
+    # Retain verified identity and session expiry.
     return {"uid": uid, "email": returned_email, "expires_at": expires_at}
 
 
